@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.edu.seu.studentadmission.RegistrationController">
+   <children>
+      <Label layoutX="225.0" layoutY="13.0" text="Student Admission">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameField" layoutX="198.0" layoutY="61.0" prefHeight="33.0" prefWidth="217.0" promptText="Name" />
+      <PasswordField fx:id="passwordField" layoutX="198.0" layoutY="109.0" prefHeight="33.0" prefWidth="217.0" promptText="Password" />
+      <ChoiceBox fx:id="programChoiceBox" layoutX="198.0" layoutY="159.0" prefHeight="33.0" prefWidth="217.0" />
+      <RadioButton layoutX="198.0" layoutY="207.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="105.0" text="Male">
+         <toggleGroup>
+            <ToggleGroup fx:id="genderToggle" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="307.0" layoutY="207.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="105.0" text="Female" toggleGroup="$genderToggle" />
+      <TextArea fx:id="biographyTextArea" layoutX="198.0" layoutY="245.0" prefHeight="60.0" prefWidth="217.0" promptText="Biography" />
+      <CheckBox fx:id="agreeCheckBox" layoutX="198.0" layoutY="321.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="217.0" text="I agree to admit" />
+      <Button layoutX="263.0" layoutY="356.0" mnemonicParsing="false" onAction="#saveAction" prefHeight="33.0" prefWidth="89.0" text="Save" />
+   </children>
+</AnchorPane>

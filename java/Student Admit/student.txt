@@ -1,0 +1,3 @@
+Abul,123,BBA,I am Abul from SEU.
+Babul,abc,EEE,I am babul
+Ms. Kabul,678,English,I am kabul
